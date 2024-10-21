@@ -1,0 +1,16 @@
+<main>
+  <p>home works!</p>
+  <section>
+    <div class="product-container">
+      <app-product-card
+    [product]="{
+      name: 'Sample Product',
+      price: 99.99,
+      image: 'https://via.placeholder.com/200'
+    }"
+    (favoriteOnclick)="onFavoriteClick()"
+    (cartOnclick)="onCartClick()"
+    ></app-product-card>
+    </div>
+  </section>
+</main>

@@ -1,0 +1,16 @@
+<div class="card">
+  <img [src]="product.image" [alt]="product.name" class="image" />
+  <div class="details">
+    <div class="header">
+      <h2 class="name">{{ product.name }}</h2>
+      <button class="favorite" (click)="toggleFavorite()">
+        <fa-icon [icon]="favorite ? faHeartBroken : faHeart"></fa-icon>
+      </button>
+    </div>
+    <p class="price">${{ product.price }}</p>
+    <div class="button-container">
+      <button (click)="cartOnclick.emit()">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
